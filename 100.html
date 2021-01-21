@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      
+    <meta charset="utf-8">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <title>Index Prestasi</title>
+
+  </head>
+	
+	
+  <body background="../../../../Downloads/Artboard back.jpg">
+	  
+	 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+     
+		 <li><img class="image" border="0" src="../../../../Downloads/logo-iteba-stiker-2-1.png" width="60px" style="margin: 1px;padding: 0px color:white"> </li>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#"></a>
+                <a class="dropdown-item" href="#"></a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">kevin antony k</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+	  <div class="alert-dark">
+	  <center><img src="../../../../Downloads/logo-iteba-stiker-2-1.png"></img> </center>
+	<br></br>
+	  <script language="JavaScript">
+		  
+	function hitungip()
+		{
+			var nama = document.fform.inama.value;
+			var quis = parseFloat(document.fform.iquis.value); 
+			var tugas = parseFloat(document.fform.itugas.value); 
+			var uts = parseFloat(document.fform.iuts.value);
+			var uas = parseFloat(document.fform.iuas.value);
+			var ip =" ";
+			var ket=" ";
+			var na = (0.10*quis)+(0.20*tugas)+(0.30*uts)+(0.40*uas);
+			
+		if ((na > 80) && (na <=100)) {
+			ip ="A";
+			ket="Lulus dengan Sangat Baik"; }
+		else if ((na > 68) && (na <=80)) {
+			ip ="B";
+			ket="Lulus dengan Baik"; }
+		else if ((na > 55) && (na <=68)) {
+			ip ="C";
+			ket="Lulus dengan Cukup"; }
+		else if ((na > 38) && (na <=55)) {
+			ip ="D";
+			ket="Lulus dengan Kurang"; }
+		else {
+			ip ="E";
+			ket="Tidak Lulus"; }
+		document.fform.oip.value=ip;
+		document.fform.oket.value=ket;}
+	
+		function simpan()
+		  {
+			var nama = document.fform.inama.value;
+			var quis = parseFloat(document.fform.iquis.value); 
+			var tugas = parseFloat(document.fform.itugas.value); 
+			var uts = parseFloat(document.fform.iuts.value);
+			var uas = parseFloat(document.fform.iuas.value);
+			var ip =" ";
+			var ket=" ";
+			var na = (0.10*quis)+(0.20*tugas)+(0.30*uts)+(0.40*uas);
+			
+		if ((na > 80) && (na <=100)) {
+			ip ="A";
+			ket="Lulus dengan Sangat Baik"; }
+		else if ((na > 68) && (na <=80)) {
+			ip ="B";
+			ket="Lulus dengan Baik"; }
+		else if ((na > 55) && (na <=68)) {
+			ip ="C";
+			ket="Lulus dengan Cukup"; }
+		else if ((na > 38) && (na <=55)) {
+			ip ="D";
+			ket="Lulus dengan Kurang"; }
+		else {
+			ip ="E";
+			ket="Tidak Lulus"; }
+		document.fform.oip.value=ip;
+		document.fform.oket.value=ket;
+			
+	 var tabel = document.getElementById("databel");
+       var baris = tabel.insertRow(1);
+       var kol1 = baris.insertCell(0);
+       var kol2 = baris.insertCell(1);
+       var kol3 = baris.insertCell(2);
+       var kol4 = baris.insertCell(3);
+			var kol5 = baris.insertCell(4);
+			var kol6 = baris.insertCell(5);
+			var kol7 = baris.insertCell(6);
+               
+       kol1.innerHTML = nama;
+       kol2.innerHTML = quis;
+       kol3.innerHTML = tugas;
+       kol4.innerHTML = uts;
+			 kol5.innerHTML = uas;
+			 kol6.innerHTML = ip;
+			 kol7.innerHTML = ket;
+		}
+		  function printDiv(elementId) {
+		var a = document.getElementById('printing-css').value;
+		var b = document.getElementById(elementId).innerHTML;
+		window.frames["print_frame"].document.title = document.title;
+		window.frames["print_frame"].document.body.innerHTML = '<style>' + a + '</style>' + b;
+		window.frames["print_frame"].window.focus();
+		window.frames["print_frame"].window.print(); }
+
+		  
+	  </script>
+     <textarea id="printing-css" style="display:none;">.no-print{display:none}</textarea>
+	<iframe id="printing-frame" name="print_frame" src="about:blank" style="display:none;"></iframe>
+	
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <link href="">
+        <div class="col-md-8"><h1><center>Hello,Mahasiswa!</center></h1>
+          <form name="fform" method="" action="" >
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Nama</label>
+        <input type="text" class="form-control" name="inama" id="exampleFormControlInput1" placeholder="isi nama asli...." >
+        <label for="exampleFormControlInput1">Quiz</label>
+        <input type="text" class="form-control" name="iquis" id="exampleFormControlInput2" placeholder="isi nilai Quis....">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Tugas</label>
+        <input type="text" class="form-control" name="itugas" id="exampleFormControlInput2" placeholder="isi nilai Tugas....">
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">UTS</label>
+        <input type="text" class="form-control" name="iuts" id="exampleFormControlInput2" placeholder="isi nilai Uts....">
+        </select>
+      </div>
+		  <div class="form-group">
+        <label for="exampleFormControlSelect1">UAS</label>
+        <input type="text" class="form-control" name="iuas" id="exampleFormControlInput2" placeholder="isi nilai Uas....">
+        </select>
+      </div>
+      
+		   <tr>
+<td width="100%" colspan="4" bgcolor="#00DCFF"><p Align="center" >&nbsp; </p></td>
+</tr> <tr>
+<td width="100%" colspan="4" align="center" bgcolor="#00DCFF">
+<div class="form-group">
+        <label for="exampleFormControlSelect1">Index Prestasi</label>
+	<input type="text" size="5" disabled name="oip">
+	 <label for="exampleFormControlSelect1">Keterangan</label>
+	    <input type="text" size="25" disabled name="oket"></td>
+	
+	<br></br>
+ </tr>
+<center>
+		<button type="button" onClick='hitungip()' class="btn btn-success">Hitung</button>
+        <button type="button" onClick='simpan()' class="btn btn-success">Simpan</button>
+		<button type="reset" class="btn btn-warning">Batal</button>
+	<button type="button" value="Print" class="btn btn-success" onclick="printDiv('print-area-2')" />Print</button></center>
+      </div>
+<div id="print-area-2" class="print-area">
+      <div class="row">
+        <table class="table" id="databel">
+          <thead bgcolor="Tomato" >
+            <tr bgcolor="#F5FCFF">
+              <th scope="col">Nama</th>
+              <th scope="col">Quiz</th>
+              <th scope="col">Tugas</th>
+              <th scope="col">UTS</th>
+				<th scope="col">UAS</th>
+				<th scope="col">IP</th>
+				<th scope="col">Keterangan</th>
+            </tr>
+          </thead>
+        </table>  
+      </div>
+</div>
+    </form>
+        </div>          
+        <div class="col-md-2" ></div>
+      </div>
+    </div>
+<br></br>
+    <marquee><h1>"Institut Teknologi Batam"</h1></marquee>
+
+
+ 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</div>
+<footer>
+  <p>Footer</p>
+</footer>
+
+   </body>
+
+</html>
